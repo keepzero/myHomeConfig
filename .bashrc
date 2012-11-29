@@ -21,9 +21,9 @@ if [ -f ~/.bash_funcs ]; then
 fi
 
 #IBus input
-export GTK_IM_MODULE=ibus
-export XMODIFIERS=@im=ibus
-export QT_IM_MODULE=ibus
+#export GTK_IM_MODULE=ibus
+#export XMODIFIERS=@im=ibus
+#export QT_IM_MODULE=ibus
 
 #locale
 #export LANG=zh_CN.UTF-8
