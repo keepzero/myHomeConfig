@@ -1,0 +1,58 @@
+! Xcursor
+!Xcursor.theme:
+!Xcursor.size: 32
+
+!!=============================================================================
+!! RXVT-unicode setting
+!!=============================================================================
+!!$HOME/.Xdefaults
+URxvt.preeditType:Root
+URxvt.urgentOnBell:True
+!!调整此处设置输入法
+URxvt.inputMethod:fcitx
+!!颜色设置
+URxvt.depth:32
+!!中括号内数表示透明度
+URxvt.background:[85]#000505
+URxvt.foreground:#cfcfcf
+URxvt.colorBD:Gray95
+URxvt.colorUL:Green
+URxvt.color1:Red2
+URxvt.color4:RoyalBlue
+URxvt.color5:Magenta2
+URxvt.color8:Gray50
+URxvt.color10:Green2
+URxvt.color12:DodgerBlue
+URxvt.color14:Cyan2
+URxvt.color15:Gray95
+!!URL操作
+URxvt.urlLauncher:google-chrome
+URxvt.matcher.button:1
+Urxvt.perl-ext-common:matcher
+!!滚动条设置
+URxvt.scrollBar:True
+URxvt.scrollBar_right:True
+URxvt.scrollBar_floating:False
+URxvt.scrollstyle:plain
+!!滚屏设置
+URxvt.mouseWheelScrollPage:False
+URxvt.scrollTtyOutput:False
+URxvt.scrollWithBuffer:True
+URxvt.scrollTtyKeypress:True
+!!光标闪烁
+URxvt.cursorBlink:True
+URxvt.saveLines:3000
+!!边框
+URxvt.borderLess:False
+URxvt.borderColor:#121222
+!!Urxvt perl-lib
+URxvt.perl-lib: ~/.urxvt/
+!!Tabs shift + ↓ for new tab && vim-scrollback
+!!URxvt.perl-ext-common: default,tabbed,vim-scrollback
+!!URxvt.perl-ext-common: default,tabbed
+!!vim-scrollback config
+!!URxvt.vim-scrollback-paste: none
+!!字体设置
+Xft.dpi:96
+URxvt.font:xft:Inconsolata:size=11:style=Regular:antialias=true,xft:Inconsolata:size=11:style=Regular:antialias=true
+URxvt.boldfont:xft:Inconsolata:size=11:style=BOld:antialias=true,xft:Inconsolata:size=11:style=Bold:antialias=true
