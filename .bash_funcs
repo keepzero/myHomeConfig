@@ -1,0 +1,7 @@
+# Useful bash functions
+
+## mkdir, and cd into it
+mkcd () {
+    mkdir -p "$*"
+    cd "$*"
+}

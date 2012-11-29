@@ -1,6 +1,5 @@
 # some more ls aliases
-#alias ll='ls -alF'
-#alias la='ls -A'
+alias ls='ls --color=auto'
 alias l='ls -CF'
 alias ll='ls --color=auto -liFh' 
 alias la='ls --color=auto -AF'
@@ -12,7 +11,6 @@ alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 
 # some usefull alias
-#alias more='less'
 alias df='df -h'
 alias gdb='gdb -quiet'
 alias mysql="mysql --prompt=\"(\u@\h)[\d]>\""
@@ -27,7 +25,7 @@ alias gcc='gcc -std=c99'
 
 # when use sudo will lost environment variables
 # unless run sudo with the -E option
-alias sudo='sudo -E'
+#alias sudo='sudo -E'
 
 # for archlinux
 alias p='sudo yaourt'
