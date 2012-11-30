@@ -1,0 +1,23 @@
+# .bashrc
+
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+	. /etc/bashrc
+fi
+
+# User specific aliases and functions
+
+# Alias definitions.
+if [ -f ~/.bash_aliases ]; then
+    . ~/.bash_aliases
+fi
+
+# Common bash env
+if [ -f ~/.bash_common ]; then
+    . ~/.bash_common
+fi
+
+# Useful bash functions
+if [ -f ~/.bash_funcs ]; then
+    . ~/.bash_funcs
+fi
