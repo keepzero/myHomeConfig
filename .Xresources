@@ -54,5 +54,5 @@ URxvt.perl-lib: ~/.urxvt/
 !!URxvt.vim-scrollback-paste: none
 !!字体设置
 Xft.dpi:96
-URxvt.font:xft:Inconsolata:size=11:style=Regular:antialias=true,xft:Inconsolata:size=11:style=Regular:antialias=true
-URxvt.boldfont:xft:Inconsolata:size=11:style=BOld:antialias=true,xft:Inconsolata:size=11:style=Bold:antialias=true
+URxvt.font:xft:Monospace:size=10:style=Regular:antialias=true,xft:WenQuanYi Micro Hei Mono:size=10:style=Regular:antialias=true
+URxvt.boldfont:xft:Monospace:size=10:style=BOld:antialias=true,xft:WenQuanYi Micro Hei Mono:size=10:style=Bold:antialias=true
