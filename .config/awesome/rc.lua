@@ -378,3 +378,4 @@ end)
 
 awful.util.spawn_with_shell("run_once fcitx")
 awful.util.spawn_with_shell("run_once xcompmgr")
+awful.util.spawn_with_shell("run_once kupfer")
