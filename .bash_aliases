@@ -4,6 +4,7 @@ alias l='ls -CF'
 alias ll='ls --color=auto -liFh' 
 alias la='ls --color=auto -AF'
 alias l.='ls -d .* --color=auto'
+alias sl="echo 'Maybe you mean: ls'; ls"
 
 # some grep alias
 alias grep='grep --color=auto'
