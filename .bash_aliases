@@ -30,3 +30,8 @@ alias gcc='gcc -std=c99'
 
 # for archlinux
 alias p='sudo yaourt'
+
+# for remote server not support screen-256color
+if [ $TERM == 'screen-256color' ]; then
+    alias ssh='TERM=screen ssh'
+fi
