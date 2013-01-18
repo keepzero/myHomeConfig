@@ -23,6 +23,7 @@ alias pman="pinfo -m"
 #alias top='htop'
 alias pso='ps -o pid,comm,pcpu,pmem,ni,pri,stat,ruser'
 alias gcc='gcc -std=c99'
+alias diff='colordiff'
 
 # when use sudo will lost environment variables
 # unless run sudo with the -E option
