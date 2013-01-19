@@ -28,9 +28,6 @@ alias gcc='gcc -std=c99'
 # unless run sudo with the -E option
 #alias sudo='sudo -E'
 
-# for archlinux
-alias p='sudo yaourt'
-
 # for remote server not support screen-256color
 if [ $TERM == 'screen-256color' ]; then
     alias ssh='TERM=screen ssh'
