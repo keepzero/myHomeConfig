@@ -1,10 +1,5 @@
 # Common bash env for all dist
 
-# Set TERM to rxvt if run in urxvt
-if [ "$TERM" = "rxvt-unicode" ]; then
-    export TERM=rxvt
-fi
-
 # Set up PS1 prompt
 if [[ `uname -s` == 'Linux' ]]; then
 
