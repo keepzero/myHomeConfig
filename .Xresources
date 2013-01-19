@@ -6,7 +6,7 @@
 !! RXVT-unicode setting
 !!=============================================================================
 !!$HOME/.Xdefaults
-URxvt.preeditType:Root
+URxvt.preeditType:OffTheSpot
 URxvt.urgentOnBell:True
 !!调整此处设置输入法
 URxvt.inputMethod:fcitx
