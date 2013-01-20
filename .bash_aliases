@@ -32,6 +32,6 @@ alias diff='colordiff'
 # for remote server not support screen-256color
 if [ $TERM == 'screen-256color' ]; then
     alias ssh='TERM=screen ssh'
-elseif [ $TERM == 'rxvt-unicode' ]; then
+elif [ $TERM == 'rxvt-unicode' ]; then
     alias ssh='TERM=rxvt ssh'
 fi
