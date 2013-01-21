@@ -1,4 +1,4 @@
-Config { font = "xft:WenQuanYi Micro Hei Mono:size=8:antialias=true"
+Config { font = "xft:WenQuanYi Bitmap Song:size=8"
     , bgColor = "black"
     , fgColor = "grey"
     , position = TopW L 100
