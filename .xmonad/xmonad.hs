@@ -15,14 +15,22 @@ import System.IO
 main = do
     -- session <- getEnv "DESKTOP_SESSION"
     -- xmonad $ maybe desktopConfig desktop session
-    xmonad $ defaultConfig { 
-        manageHook   = manageDocks <+> manageHook defaultConfig,
-        layoutHook   = avoidStruts  $  layoutHook defaultConfig,
-        modMask      = mod4Mask,
-        terminal     = "urxvt",
-        borderWidth  = 2
-
-    }
+    xmproc <- spawnPipe "xmobar ~/.xmonad/xmobarrc"
+    xmonad $ defaultConfig 
+        { manageHook   = manageDocks <+> manageHook defaultConfig
+        , layoutHook   = avoidStruts  $  layoutHook defaultConfig
+        , logHook = dynamicLogWithPP xmobarPP
+            { ppOutput = hPutStrLn xmproc
+            , ppTitle  = xmobarColor "green" "" . shorten 50
+            }
+        , modMask      = mod4Mask
+        , terminal     = "urxvt"
+        , borderWidth  = 2
+        }  `additionalKeys`
+        [ ((mod4Mask .|. shiftMask, xK_z), spawn "xscreensaver-command -lock")
+        , ((controlMask, xK_Print), spawn "sleep 0.2; scrot -s")
+        , ((0, xK_Print), spawn "scrot")
+        ]
 
 -- desktop "gnome" = gnomeConfig
 -- desktop "kde" = kde4Config
