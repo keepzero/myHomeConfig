@@ -26,6 +26,8 @@ main = do
         , modMask      = mod4Mask
         , terminal     = "urxvt"
         , borderWidth  = 2
+        , normalBorderColor  = "#000000"
+        , focusedBorderColor = "#000088"
         }  `additionalKeys`
         [ ((mod4Mask .|. shiftMask, xK_z), spawn "xscreensaver-command -lock")
         , ((controlMask, xK_Print), spawn "sleep 0.2; scrot -s")

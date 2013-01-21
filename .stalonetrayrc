@@ -1,0 +1,7 @@
+icon_size 16
+geometry 5x1-364+0
+#transparent true
+sticky true
+icon_gravity SE
+window_layer bottom 
+background "#000000"

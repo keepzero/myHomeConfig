@@ -1,4 +1,4 @@
-Config { font = "xft:WenQuanYi Bitmap Song:size=8"
+Config { font = "xft:WenQuanYi Bitmap Song:size=10"
     , bgColor = "black"
     , fgColor = "grey"
     , position = TopW L 100
@@ -10,5 +10,5 @@ Config { font = "xft:WenQuanYi Bitmap Song:size=8"
                  ]
     , sepChar = "%"
     , alignSep = "}{"
-    , template = "%StdinReader% }{ %cpu% | %memory% * %swap%    <fc=#ee9a00>%date%</fc> | Xmonad "
+    , template = "%StdinReader% }{ %cpu% | %memory% * %swap%  <fc=#ee9a00>%date%</fc> | "
     }
