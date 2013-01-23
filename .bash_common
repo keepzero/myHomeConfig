@@ -3,17 +3,9 @@
 # Set up PS1 prompt
 if [[ `uname -s` == 'Linux' ]]; then
 
-    # set up PS1
-    BLUE=`tput setf 1`
-    GREEN=`tput setf 2`
-    CYAN=`tput setf 3`
-    RED=`tput setf 4`
-    MAGENTA=`tput setf 5`
-    YELLOW=`tput setf 6`
-    WHITE=`tput setf 7`
     #PS1='\[$GREEN\]\u@\h \[$WHITE\]\A \[$BLUE\]\w\[$GREEN\] \$\[$WHITE\] '
     #PS1='\[$GREEN\]\u@\h \[$BLUE\]\w\[$GREEN\] \$\[$WHITE\] '
-    PS1='`a=$?;if [ $a -ne 0 ]; then a="  "$a; echo -ne "\[\e[s\e[1A\e[$((COLUMNS-2))G\e[31m\e[1;41m${a:(-3)}\e[u\]\[\e[0m\e[7m\e[2m\]"; fi`\[$GREEN\]\u@\h \[$BLUE\]\w\[$GREEN\] \$\[$WHITE\]\[\e[0m\] '
+    PS1='`a=$?;if [ $a -ne 0 ]; then a="  "$a; echo -ne "\[\e[s\e[1A\e[$((COLUMNS-2))G\e[31m\e[1;41m${a:(-3)}\e[u\]\[\e[0m\e[7m\e[2m\]"; fi`\[\e[0;32m\]\u@\h \[\e[1;34m\]\w\[\e[0;32m\] \n\[\e[;34m\]\$\[\e[;37m\]\[\e[0m\] '
 
 else
     # Default PS1
