@@ -25,7 +25,7 @@ main = do
             }
         , modMask      = mod4Mask
         , terminal     = "urxvt"
-        , borderWidth  = 2
+        , borderWidth  = 0
         , normalBorderColor  = "#000000"
         , focusedBorderColor = "#000088"
         }  `additionalKeys`
