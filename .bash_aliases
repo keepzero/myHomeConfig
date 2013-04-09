@@ -14,7 +14,7 @@ alias egrep='egrep --color=auto'
 # some usefull alias
 alias df='df -h'
 alias gdb='gdb -quiet'
-alias mysql="mysql --prompt=\"(\u@\h)[\d]>\""
+alias mysql='mysql --prompt="(\u@\h)[\d]> "'
 alias vi='vim'
 alias scr="byobu-launcher"
 alias ipconfig='ifconfig'
