@@ -23,9 +23,6 @@ export FCEDIT=/usr/bin/vim
 # for awesome wm
 export _JAVA_AWT_WM_NONREPARENTING="1"
 
-# set ignore case
-bind `set completion-ignore-case on`
-
 # set CDPATH
 if [ -d "$HOME/Projects" ] ; then
     export CDPATH=.:$HOME:$HOME/Projects
