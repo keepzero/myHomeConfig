@@ -1,0 +1,10 @@
+# When remote term not support urxvt or 256color 
+if [[ $(echo $TERM | grep "rxvt-unicode") != "" ]]; then
+	export TERM=rxvt
+fi
+if [ "$TERM"x = "xterm-256color"x ]; then
+	export TERM=xterm
+fi
+if [ "$TERM"x = "screen-256color"x ]; then
+	export TERM=screen
+fi

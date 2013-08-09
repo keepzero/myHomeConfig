@@ -30,8 +30,8 @@ alias diff='colordiff'
 #alias sudo='sudo -E'
 
 # for remote server not support screen-256color
-if [ $TERM == 'screen-256color' ]; then
-    alias ssh='TERM=screen ssh'
-elif [ $TERM == 'rxvt-unicode' ]; then
-    alias ssh='TERM=rxvt ssh'
-fi
+#if [[ $TERM == 'screen-256color' ]]; then
+#    alias ssh='TERM=screen ssh'
+#elif [[ $TERM == 'rxvt-unicode' ]]; then
+#    alias ssh='TERM=rxvt ssh'
+#fi

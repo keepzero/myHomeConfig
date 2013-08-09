@@ -41,13 +41,26 @@ ZSH_THEME="bira"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git)
+plugins=(git autojump)
 
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-alias mysql='mysql --prompt="(\u@\h)[\d]> "'
+
+# Alias definitions.
+if [ -f ~/.bash_aliases ]; then
+    . ~/.bash_aliases
+fi
+alias -s gz='tar -xzvf'
+alias -s tgz='tar -xzvf'
+alias -s zip='unzip'
+alias -s bz2='tar -xjvf'
+
+# Useful bash functions
+if [ -f ~/.bash_funcs ]; then
+    . ~/.bash_funcs
+fi
 
 # Custom ZSH_THEME here
-PROMPT="${user_host}${current_dir} ${git_branch}
+export PROMPT="${user_host}${current_dir} ${git_branch}
 %{$fg_bold[blue]%}$ %{$reset_color%}"
