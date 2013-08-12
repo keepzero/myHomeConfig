@@ -41,7 +41,7 @@ ZSH_THEME="bira"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git autojump)
+plugins=(git github tmux svn autojump)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -59,6 +59,11 @@ alias -s bz2='tar -xjvf'
 # Useful bash functions
 if [ -f ~/.bash_funcs ]; then
     . ~/.bash_funcs
+fi
+
+# External env
+if [ -f ~/.bash_envs ]; then
+    . ~/.bash_envs
 fi
 
 # Custom ZSH_THEME here

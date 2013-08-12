@@ -1,0 +1,4 @@
+# GOPATH
+export GOROOT=/opt/go
+export GOBIN=$GOROOT/bin
+export GOPATH=$HOME/develop/go

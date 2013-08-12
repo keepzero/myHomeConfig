@@ -21,3 +21,8 @@ fi
 if [ -f ~/.bash_funcs ]; then
     . ~/.bash_funcs
 fi
+
+# External env
+if [ -f ~/.bash_envs ]; then
+    . ~/.bash_envs
+fi
