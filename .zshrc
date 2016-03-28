@@ -69,3 +69,5 @@ fi
 # Custom ZSH_THEME here
 export PROMPT="${user_host}${current_dir} ${git_branch}
 %{$fg_bold[blue]%}$ %{$reset_color%}"
+
+bindkey \^U backward-kill-line

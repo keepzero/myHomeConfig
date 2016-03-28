@@ -1,9 +1,9 @@
 # some more ls aliases
-alias ls='ls --color=auto'
+# alias ls='ls --color=auto'
 alias l='ls -CF'
-alias ll='ls --color=auto -liFh' 
-alias la='ls --color=auto -AF'
-alias l.='ls -d .* --color=auto'
+# alias ll='ls --color=auto -liFh' 
+# alias la='ls --color=auto -AF'
+# alias l.='ls -d .* --color=auto'
 alias sl="echo 'Maybe you mean: ls'; ls"
 
 # some grep alias
